@@ -1,0 +1,1938 @@
+<html xmlns="https://www.w3.org/1999/xhtml"><head>
+<title>Geo Kitten</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="description" content="Can your choice in kittens reveal where you live?">
+<meta name="keywords" content="geo kitten, geo, kitten, accent">
+<meta property="og:title" content="Geo Kitten">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Can your choice in kittens reveal where you live?">
+<meta property="og:url" content="http://www.geokitten.com">
+<meta property="og:site_name" content="geokitten.com">
+<meta itemprop="name" content="Geo Kitten">
+<meta itemprop="description" content="Can your choice in kittens reveal where you live?">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet" type="text/css">
+<style type="text/css" media="all">
+body {
+	font-family: 'Pompiere', cursive;
+	background: url(/i/light_grey.png);
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+h1, h2, h3 {
+	font-size: 72px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+sup {
+  font-size: 12px;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -24px;
+}
+h2 {
+	font-size: 28px;
+	margin: 0 0 24px 0;
+}
+h3 {
+	font-size: 28px;
+	margin: 0 0 16px 0;
+}
+#country h3, #region h3, #city h3, #home h3, #true h3, #true-early h3, #false h3 {
+	padding: 116px 0 0 0;
+}
+h3.pick {
+	margin: 0 0 16px 0;
+}
+p {
+	font-size: 18px;
+}
+img {
+	height: 240px;
+	width: 240px;
+	border: 1px solid #ddd;
+	padding: 4px;
+	background: #fff;
+	border-radius: 4px;
+}
+img.left {
+	margin-right: 8px;
+}
+strong {
+	color: #f90092;
+	font-weight: normal;
+}
+input[type="submit"] {
+	border: 1px solid #f90092;
+	font-family: 'Pompiere', cursive;
+    width: 64px;
+    overflow: hidden;
+    font-size: 24px;
+	background: #f90092;
+	color: #fff;
+	border-radius: 4px;
+	padding: 6px 8px;
+	-webkit-appearance: none;
+}
+input[type="submit"].true, input[type="submit"].true-final , input[type="submit"].true-early, input[type="submit"].skip {
+	margin-right: 8px;
+}
+#container {
+	background: #fbfbfb;
+	height: 100%;
+	width: /*752px;*/ 512px;
+	margin: 0 auto;
+	padding: 24px 12px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	text-align: center;
+}
+#content {
+	height: 303px;
+}
+#country, #region, #city, #home, .choice, #false, #true, #true-early, #bail {
+	display: none;
+}
+#ad {
+	height: auto;
+	width: auto;
+	/* height: 90px;
+	width: 728px; */
+	margin: 36px auto 24px auto;
+}
+#social {
+	margin: 16px auto 16px auto;
+	width: 154px;
+}
+#fb, #twitter {
+	width: 85px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+#twitter {
+	width: 61px;
+	margin: 0;
+}
+.clear {
+	clear: both;
+}
+.after {
+	display: none;
+}
+.footer {
+	text-decoration: underline;
+}
+.mobile {
+	display: none;
+}
+/* GDPR Styles */
+#GDPR {
+	background: #ddd;
+	padding: 12px;
+	margin: -24px -12px 24px -12px;
+}
+#GDPR a {
+	color: #f90092;
+}
+#GDPR p {
+	color: #000;	
+	margin: 9px 0 0 0;
+	padding: 0;
+	text-align: left;
+}
+#GDPR br {
+	display: none;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+@media only screen and (max-width: 767px) {
+	/* Phones */
+	#content {
+		height: 195px;
+	}
+	h2, h3 {
+		font-size: 24px;
+		margin: 0 0 18px 0;
+	}
+	#country h3, #region h3, #city h3, #home h3, #true h3, #true-early h3, #false h3 {
+		padding-top: 24px;
+	}
+	.break {
+		width: 240px;
+		padding: 0 30px;
+	}
+	p {
+		padding: 0 0 24px 0;
+	}
+	#container {
+		width: 300px;
+		padding: 10px;
+		min-height: 750px;
+	}
+	img {
+		height: 135px;
+		width: 135px;
+		border: 1px solid #ddd;
+		padding: 4px;
+		background: #fff;
+		border-radius: 4px;
+	}
+	img.left {
+		margin-right: 7px;
+	}
+	#ad {
+		height: auto;
+		width: auto;
+		margin: 18px auto;
+	}
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+	#GDPR {
+		padding: 12px;
+	}
+	#GDPR br {
+		display: block;
+	}
+	#GDPR p {
+		margin: 12px 0 0 0;
+		text-align: left;
+	}
+	.float-left {
+		width: 70%;
+	}
+	.float-right {
+		width: 30%;
+	}
+	input[type=submit] {
+		width: 84px;
+		margin: 12px 0 0 0;
+	}
+}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="application/javascript">
+$(document).ready(function() {
+ 	
+ 	// Handle Continent Click
+	$('.continent').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+					
+		// Get Continent Data and Write to Page
+		var continent = 'North America';
+		$('.trackContinent').text(continent);
+				
+		// Get Country Data and Write to Page
+		var country = 'United States';
+		if ((country == 'United States') || (country == 'United Kingdom')) {
+			var article = 'the ';
+		} else {
+			var article = '';
+		}
+		$('.trackCountry').text(country);
+				
+		// Get Region Data and Write to Page
+		var region = 'Texas';
+		if (region == 'New York') {
+			region = 'New York State';
+		}
+		if (region == 'London, City of') {
+			region = 'London';	
+		}
+		if (region == 'Edinburgh, City of') {
+			region = 'Edinburgh';		
+		}	
+		$('.trackRegion').text(region);
+		
+		// Get City Data and Write to Page
+		var city = 'Austin';
+		if ((city == 'New York') || (city == 'Rego Park')) {
+			city = 'New York City';
+		}
+		$('.trackCity').text(city);
+				
+		// Prep H3s
+		$('#country h3').html('Hmm, your first choice suggests you live in <strong>' + continent + '</strong>. Is that correct?');
+		$('#region h3').html('We\'re thinking ' + article + '<strong>' + country + '</strong>. Is that right?');
+		$('#city h3').html('<strong>' + region + '?</strong> Is that right?');
+		$('#home h3').html('You live in <strong>' + city + '</strong>.');
+		
+		// Handle Continent Click
+		if ($('.trackContinent').text() == '') {
+			$('#continent').toggle();
+			$('.pick').toggle();
+			$('#bail').toggle();
+		} else {
+			$('#continent').toggle();
+			$('#country').toggle();
+			$('.pick').toggle();
+			$('#country .true').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Ok, now select between these cuties.');
+				$('#country .true').toggle();
+				$('#country .false').toggle();
+				$('#country h3').toggle();
+				$('#country .choice').toggle();
+			});
+		}
+	});
+	
+	// Handle Country Click
+	$('.country').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		// Skip Next Two Steps if We Don't Have Region or City
+		if (($('.trackRegion').text() == '') && ($('.trackCity').text() == '')) {
+			$('.pivot').removeClass('true');
+			$('.pivot').addClass('true-early');
+			
+			// End Early if Correct
+			$('.true-early').click(function(event) {
+				event.preventDefault();
+				$('#region').toggle();
+				$('#home').css('display','none');
+				$('#true-early').toggle();
+			});
+		}
+		
+		// Skip Region if it's Missing or the Same as City
+		if ((($('.trackRegion').text() == '') && ($('.trackCity').text() != '')) || ($('.trackRegion').text() == $('.trackCity').text())) {
+			$('#region .true').addClass('skip');
+			$('#region .true').removeClass('true');	
+		}
+		
+		// Continue if Region or City Exist
+		if ($('.trackCountry').text() == '') {
+			$('#country').toggle();
+			$('.pick').toggle();
+			$('#bail').toggle();
+		} else {		
+			$('#country').toggle();
+			$('#region').toggle();
+			$('.pick').toggle();
+			
+			// Skip Region
+			$('#region .skip').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Finally, which of these two do you prefer?');
+				$('#region .skip').toggle();
+				$('#region .false').toggle();
+				$('#region h3').toggle();
+				$('#city').toggle();
+				$('#city .choice').toggle();
+				$('#city h3').toggle();
+				$('#city h4').toggle();
+			});
+			
+			// Don't Skip Region
+			$('#region .true').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Your favorite between these two?');
+				$('#region .true').toggle();
+				$('#region .false').toggle();
+				$('#region h3').toggle();
+				$('#region .choice').toggle();
+			});
+		}
+	});
+	
+	
+	// Handle Region Click
+	$('.region').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		$('#region').toggle();
+		$('#city').toggle();
+		$('.pick').toggle();
+		$('#city .true').click(function(event) {
+			event.preventDefault();
+			$('.pick').toggle();
+			$('.pick').text('Finally, which of these two do you prefer?');
+			$('#city .true').toggle();
+			$('#city .false').toggle();
+			$('#city h3').toggle();
+			$('#city .choice').toggle();
+		});
+	});
+	
+	// Handle City Click
+	$('.city').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		$('.pick').toggle();
+		$('#city').toggle();
+		$('#home').toggle();
+	});
+	
+	// Handle Early Wrong Answer
+	$('.false').click(function(event) {
+		event.preventDefault();
+		$('#country').css('display','none');
+		$('#region').css('display','none');
+		$('#city').css('display','none');
+		$('#false').toggle();
+	});
+	
+	// Handle Early Right Answer
+	$('.true-early').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#true-early').toggle();
+	});
+	
+	// Handle Final Right Answer
+	$('.true-final').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#true').toggle();
+	});
+	
+	// Handle Final Wrong Answer
+	$('.false-final').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#false').toggle();
+	});
+	
+	// Reveal IP Address
+	$('.before').click(function(event) {
+		event.preventDefault();
+		$('.before').toggle();
+		$('.after').toggle();
+	});
+});
+</script>
+<meta name="google-site-verification" content="Yz88A_VoxO9wI7vz94EScEv_bJJayFAwdoMmMRzmocs">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<style id="__wb_font_loader">
+    /* Optimist Extra Light */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLtIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLtIt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    /* Optimist Light */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Lt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Lt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_LtIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_LtIt.woff') format('woff');
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    /* Optimist Regular */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Rg.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Rg.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_It.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_It.woff') format('woff');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    /* Optimist SemiBold */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBd.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBd.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBdIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBdIt.woff') format('woff');
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    /* Optimist Bold */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Bd.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Bd.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_BdIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_BdIt.woff') format('woff');
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Circular Pro */
+    @font-face {
+      font-family: 'Circular-Pro-Book';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-book.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-book.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Blackitalic';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-blackitalic.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-blackitalic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Black';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-black.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-black.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Bookitalic';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-bookitalic.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-bookitalic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Wikibuy Icon Font */
+    @font-face {
+      font-family: 'wikibuy-iconfont';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/wikibuy-iconfont.woff') format('woff'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/wikibuy-iconfont.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style></head>
+<body>
+<div style="display: none;">
+	<div class="trackContinent"></div>
+	<div class="trackRegion"></div>
+	<div class="trackCountry"></div>
+	<div class="trackCity"></div>
+</div>
+<div id="container">
+		<h1><a href="/">Geo Kitten</a><sup>TM</sup></h1>
+	<h2 class="break">Can your choice in kittens reveal <strong>where you live?</strong></h2>
+	<div id="content">
+		<h3 class="pick">Start by clicking your favorite kitten.</h3>
+		<div id="continent">
+			<a href="" class="continent"><img src="/i/9.jpg" class="left"></a> <a href="" class="continent"><img src="/i/15.jpg"></a>
+		</div>
+		<div id="country">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="country"><img src="/i/6.jpg" class="left"></a><a href="" class="country"><img src="/i/11.jpg"></a></div>
+		</div>
+		<div id="region">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true pivot"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="region"><img src="/i/7.jpg" class="left"></a><a href="" class="region"><img src="/i/4.jpg"></a></div>
+		</div>
+		<div id="city">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="city"><img src="/i/10.jpg" class="left"></a><a href="" class="city"><img src="/i/12.jpg"></a></div>
+		</div>
+		<div id="home">
+			<h3></h3>
+			<h4><input type="submit" value="Yes!" class="true-final"><input type="submit" value="No!" class="false-final"></h4>
+		</div>
+		<div id="false">
+			<h3>Rawr! Sry 2 Disapoint. 😿</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="true">
+			<h3>Meow! Meez win again! 😸</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="true-early">
+			<h3>Ure vry mysterious. <strong>Meez giv up.</strong> 😾</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="bail">
+			<h3>Meez vry confusd. <strong>Sry.</strong> 😿</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+	</div>
+	<div id="ad">
+		<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8073186300309643" crossorigin="anonymous"></script>
+	    <!-- Geokitten Responsive -->
+		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8073186300309643" data-ad-slot="1439441554" data-ad-format="auto" data-full-width-responsive="true"></ins>
+		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+	</div>
+	<p>© 2014-2024 <a href="http://www.boredbutton.com" class="footer">Bored Button</a> LLC<span class="desktop">&nbsp;&nbsp;|&nbsp;&nbsp;</span><br class="mobile"><a href="/terms" class="footer">Terms</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="privacy" class="footer">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="before footer" onclick="_gaq.push(['_trackEvent', 'Click', 'Learn']);">How Does This Work?</a><span class="after">By <a href="https://en.wikipedia.org/wiki/IP_address" onclick="_gaq.push(['_trackEvent', 'Click', 'IP']);"><u>IP address</u></a>. Learn more about <a href="https://www.aclu.org/technology-and-liberty/internet-privacy" onclick="_gaq.push(['_trackEvent', 'Click', 'Privacy']);"><u>internet privacy</u></a>.</span></p>
+</div>
+<div id="meows">
+<audio id="meow1" source="" src="/meows/meow1.mp3" type="audio/mpeg">
+<audio id="meow2" source="" src="/meows/meow2.mp3" type="audio/mpeg">
+<audio id="meow3" source="" src="/meows/meow3.mp3" type="audio/mpeg">
+<audio id="meow4" source="" src="/meows/meow4.mp3" type="audio/mpeg">
+<audio id="meow5" source="" src="/meows/meow5.mp3" type="audio/mpeg">
+<audio id="meow6" source="" src="/meows/meow6.mp3" type="audio/mpeg">
+<audio id="meow7" source="" src="/meows/meow7.mp3" type="audio/mpeg">
+</audio></audio></audio></audio></audio></audio></audio></div>
+
+</body></html><head>
+<title>Geo Kitten</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="description" content="Can your choice in kittens reveal where you live?">
+<meta name="keywords" content="geo kitten, geo, kitten, accent">
+<meta property="og:title" content="Geo Kitten">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Can your choice in kittens reveal where you live?">
+<meta property="og:url" content="http://www.geokitten.com">
+<meta property="og:site_name" content="geokitten.com">
+<meta itemprop="name" content="Geo Kitten">
+<meta itemprop="description" content="Can your choice in kittens reveal where you live?">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet" type="text/css">
+<style type="text/css" media="all">
+body {
+	font-family: 'Pompiere', cursive;
+	background: url(/i/light_grey.png);
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+h1, h2, h3 {
+	font-size: 72px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+sup {
+  font-size: 12px;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -24px;
+}
+h2 {
+	font-size: 28px;
+	margin: 0 0 24px 0;
+}
+h3 {
+	font-size: 28px;
+	margin: 0 0 16px 0;
+}
+#country h3, #region h3, #city h3, #home h3, #true h3, #true-early h3, #false h3 {
+	padding: 116px 0 0 0;
+}
+h3.pick {
+	margin: 0 0 16px 0;
+}
+p {
+	font-size: 18px;
+}
+img {
+	height: 240px;
+	width: 240px;
+	border: 1px solid #ddd;
+	padding: 4px;
+	background: #fff;
+	border-radius: 4px;
+}
+img.left {
+	margin-right: 8px;
+}
+strong {
+	color: #f90092;
+	font-weight: normal;
+}
+input[type="submit"] {
+	border: 1px solid #f90092;
+	font-family: 'Pompiere', cursive;
+    width: 64px;
+    overflow: hidden;
+    font-size: 24px;
+	background: #f90092;
+	color: #fff;
+	border-radius: 4px;
+	padding: 6px 8px;
+	-webkit-appearance: none;
+}
+input[type="submit"].true, input[type="submit"].true-final , input[type="submit"].true-early, input[type="submit"].skip {
+	margin-right: 8px;
+}
+#container {
+	background: #fbfbfb;
+	height: 100%;
+	width: /*752px;*/ 512px;
+	margin: 0 auto;
+	padding: 24px 12px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	text-align: center;
+}
+#content {
+	height: 303px;
+}
+#country, #region, #city, #home, .choice, #false, #true, #true-early, #bail {
+	display: none;
+}
+#ad {
+	height: auto;
+	width: auto;
+	/* height: 90px;
+	width: 728px; */
+	margin: 36px auto 24px auto;
+}
+#social {
+	margin: 16px auto 16px auto;
+	width: 154px;
+}
+#fb, #twitter {
+	width: 85px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+#twitter {
+	width: 61px;
+	margin: 0;
+}
+.clear {
+	clear: both;
+}
+.after {
+	display: none;
+}
+.footer {
+	text-decoration: underline;
+}
+.mobile {
+	display: none;
+}
+/* GDPR Styles */
+#GDPR {
+	background: #ddd;
+	padding: 12px;
+	margin: -24px -12px 24px -12px;
+}
+#GDPR a {
+	color: #f90092;
+}
+#GDPR p {
+	color: #000;	
+	margin: 9px 0 0 0;
+	padding: 0;
+	text-align: left;
+}
+#GDPR br {
+	display: none;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+@media only screen and (max-width: 767px) {
+	/* Phones */
+	#content {
+		height: 195px;
+	}
+	h2, h3 {
+		font-size: 24px;
+		margin: 0 0 18px 0;
+	}
+	#country h3, #region h3, #city h3, #home h3, #true h3, #true-early h3, #false h3 {
+		padding-top: 24px;
+	}
+	.break {
+		width: 240px;
+		padding: 0 30px;
+	}
+	p {
+		padding: 0 0 24px 0;
+	}
+	#container {
+		width: 300px;
+		padding: 10px;
+		min-height: 750px;
+	}
+	img {
+		height: 135px;
+		width: 135px;
+		border: 1px solid #ddd;
+		padding: 4px;
+		background: #fff;
+		border-radius: 4px;
+	}
+	img.left {
+		margin-right: 7px;
+	}
+	#ad {
+		height: auto;
+		width: auto;
+		margin: 18px auto;
+	}
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+	#GDPR {
+		padding: 12px;
+	}
+	#GDPR br {
+		display: block;
+	}
+	#GDPR p {
+		margin: 12px 0 0 0;
+		text-align: left;
+	}
+	.float-left {
+		width: 70%;
+	}
+	.float-right {
+		width: 30%;
+	}
+	input[type=submit] {
+		width: 84px;
+		margin: 12px 0 0 0;
+	}
+}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="application/javascript">
+$(document).ready(function() {
+ 	
+ 	// Handle Continent Click
+	$('.continent').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+					
+		// Get Continent Data and Write to Page
+		var continent = 'North America';
+		$('.trackContinent').text(continent);
+				
+		// Get Country Data and Write to Page
+		var country = 'United States';
+		if ((country == 'United States') || (country == 'United Kingdom')) {
+			var article = 'the ';
+		} else {
+			var article = '';
+		}
+		$('.trackCountry').text(country);
+				
+		// Get Region Data and Write to Page
+		var region = 'Texas';
+		if (region == 'New York') {
+			region = 'New York State';
+		}
+		if (region == 'London, City of') {
+			region = 'London';	
+		}
+		if (region == 'Edinburgh, City of') {
+			region = 'Edinburgh';		
+		}	
+		$('.trackRegion').text(region);
+		
+		// Get City Data and Write to Page
+		var city = 'Austin';
+		if ((city == 'New York') || (city == 'Rego Park')) {
+			city = 'New York City';
+		}
+		$('.trackCity').text(city);
+				
+		// Prep H3s
+		$('#country h3').html('Hmm, your first choice suggests you live in <strong>' + continent + '</strong>. Is that correct?');
+		$('#region h3').html('We\'re thinking ' + article + '<strong>' + country + '</strong>. Is that right?');
+		$('#city h3').html('<strong>' + region + '?</strong> Is that right?');
+		$('#home h3').html('You live in <strong>' + city + '</strong>.');
+		
+		// Handle Continent Click
+		if ($('.trackContinent').text() == '') {
+			$('#continent').toggle();
+			$('.pick').toggle();
+			$('#bail').toggle();
+		} else {
+			$('#continent').toggle();
+			$('#country').toggle();
+			$('.pick').toggle();
+			$('#country .true').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Ok, now select between these cuties.');
+				$('#country .true').toggle();
+				$('#country .false').toggle();
+				$('#country h3').toggle();
+				$('#country .choice').toggle();
+			});
+		}
+	});
+	
+	// Handle Country Click
+	$('.country').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		// Skip Next Two Steps if We Don't Have Region or City
+		if (($('.trackRegion').text() == '') && ($('.trackCity').text() == '')) {
+			$('.pivot').removeClass('true');
+			$('.pivot').addClass('true-early');
+			
+			// End Early if Correct
+			$('.true-early').click(function(event) {
+				event.preventDefault();
+				$('#region').toggle();
+				$('#home').css('display','none');
+				$('#true-early').toggle();
+			});
+		}
+		
+		// Skip Region if it's Missing or the Same as City
+		if ((($('.trackRegion').text() == '') && ($('.trackCity').text() != '')) || ($('.trackRegion').text() == $('.trackCity').text())) {
+			$('#region .true').addClass('skip');
+			$('#region .true').removeClass('true');	
+		}
+		
+		// Continue if Region or City Exist
+		if ($('.trackCountry').text() == '') {
+			$('#country').toggle();
+			$('.pick').toggle();
+			$('#bail').toggle();
+		} else {		
+			$('#country').toggle();
+			$('#region').toggle();
+			$('.pick').toggle();
+			
+			// Skip Region
+			$('#region .skip').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Finally, which of these two do you prefer?');
+				$('#region .skip').toggle();
+				$('#region .false').toggle();
+				$('#region h3').toggle();
+				$('#city').toggle();
+				$('#city .choice').toggle();
+				$('#city h3').toggle();
+				$('#city h4').toggle();
+			});
+			
+			// Don't Skip Region
+			$('#region .true').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Your favorite between these two?');
+				$('#region .true').toggle();
+				$('#region .false').toggle();
+				$('#region h3').toggle();
+				$('#region .choice').toggle();
+			});
+		}
+	});
+	
+	
+	// Handle Region Click
+	$('.region').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		$('#region').toggle();
+		$('#city').toggle();
+		$('.pick').toggle();
+		$('#city .true').click(function(event) {
+			event.preventDefault();
+			$('.pick').toggle();
+			$('.pick').text('Finally, which of these two do you prefer?');
+			$('#city .true').toggle();
+			$('#city .false').toggle();
+			$('#city h3').toggle();
+			$('#city .choice').toggle();
+		});
+	});
+	
+	// Handle City Click
+	$('.city').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		$('.pick').toggle();
+		$('#city').toggle();
+		$('#home').toggle();
+	});
+	
+	// Handle Early Wrong Answer
+	$('.false').click(function(event) {
+		event.preventDefault();
+		$('#country').css('display','none');
+		$('#region').css('display','none');
+		$('#city').css('display','none');
+		$('#false').toggle();
+	});
+	
+	// Handle Early Right Answer
+	$('.true-early').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#true-early').toggle();
+	});
+	
+	// Handle Final Right Answer
+	$('.true-final').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#true').toggle();
+	});
+	
+	// Handle Final Wrong Answer
+	$('.false-final').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#false').toggle();
+	});
+	
+	// Reveal IP Address
+	$('.before').click(function(event) {
+		event.preventDefault();
+		$('.before').toggle();
+		$('.after').toggle();
+	});
+});
+</script>
+<meta name="google-site-verification" content="Yz88A_VoxO9wI7vz94EScEv_bJJayFAwdoMmMRzmocs">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<style id="__wb_font_loader">
+    /* Optimist Extra Light */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLtIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLtIt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    /* Optimist Light */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Lt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Lt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_LtIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_LtIt.woff') format('woff');
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    /* Optimist Regular */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Rg.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Rg.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_It.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_It.woff') format('woff');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    /* Optimist SemiBold */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBd.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBd.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBdIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBdIt.woff') format('woff');
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    /* Optimist Bold */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Bd.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Bd.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_BdIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_BdIt.woff') format('woff');
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Circular Pro */
+    @font-face {
+      font-family: 'Circular-Pro-Book';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-book.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-book.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Blackitalic';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-blackitalic.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-blackitalic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Black';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-black.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-black.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Bookitalic';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-bookitalic.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-bookitalic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Wikibuy Icon Font */
+    @font-face {
+      font-family: 'wikibuy-iconfont';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/wikibuy-iconfont.woff') format('woff'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/wikibuy-iconfont.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style></head><body>
+<div style="display: none;">
+	<div class="trackContinent"></div>
+	<div class="trackRegion"></div>
+	<div class="trackCountry"></div>
+	<div class="trackCity"></div>
+</div>
+<div id="container">
+		<h1><a href="/">Geo Kitten</a><sup>TM</sup></h1>
+	<h2 class="break">Can your choice in kittens reveal <strong>where you live?</strong></h2>
+	<div id="content">
+		<h3 class="pick">Start by clicking your favorite kitten.</h3>
+		<div id="continent">
+			<a href="" class="continent"><img src="/i/9.jpg" class="left"></a> <a href="" class="continent"><img src="/i/15.jpg"></a>
+		</div>
+		<div id="country">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="country"><img src="/i/6.jpg" class="left"></a><a href="" class="country"><img src="/i/11.jpg"></a></div>
+		</div>
+		<div id="region">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true pivot"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="region"><img src="/i/7.jpg" class="left"></a><a href="" class="region"><img src="/i/4.jpg"></a></div>
+		</div>
+		<div id="city">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="city"><img src="/i/10.jpg" class="left"></a><a href="" class="city"><img src="/i/12.jpg"></a></div>
+		</div>
+		<div id="home">
+			<h3></h3>
+			<h4><input type="submit" value="Yes!" class="true-final"><input type="submit" value="No!" class="false-final"></h4>
+		</div>
+		<div id="false">
+			<h3>Rawr! Sry 2 Disapoint. 😿</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="true">
+			<h3>Meow! Meez win again! 😸</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="true-early">
+			<h3>Ure vry mysterious. <strong>Meez giv up.</strong> 😾</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="bail">
+			<h3>Meez vry confusd. <strong>Sry.</strong> 😿</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+	</div>
+	<div id="ad">
+		<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8073186300309643" crossorigin="anonymous"></script>
+	    <!-- Geokitten Responsive -->
+		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8073186300309643" data-ad-slot="1439441554" data-ad-format="auto" data-full-width-responsive="true"></ins>
+		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+	</div>
+	<p>© 2014-2024 <a href="http://www.boredbutton.com" class="footer">Bored Button</a> LLC<span class="desktop">&nbsp;&nbsp;|&nbsp;&nbsp;</span><br class="mobile"><a href="/terms" class="footer">Terms</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="privacy" class="footer">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="before footer" onclick="_gaq.push(['_trackEvent', 'Click', 'Learn']);">How Does This Work?</a><span class="after">By <a href="https://en.wikipedia.org/wiki/IP_address" onclick="_gaq.push(['_trackEvent', 'Click', 'IP']);"><u>IP address</u></a>. Learn more about <a href="https://www.aclu.org/technology-and-liberty/internet-privacy" onclick="_gaq.push(['_trackEvent', 'Click', 'Privacy']);"><u>internet privacy</u></a>.</span></p>
+</div>
+<div id="meows">
+<audio id="meow1" source="" src="/meows/meow1.mp3" type="audio/mpeg">
+<audio id="meow2" source="" src="/meows/meow2.mp3" type="audio/mpeg">
+<audio id="meow3" source="" src="/meows/meow3.mp3" type="audio/mpeg">
+<audio id="meow4" source="" src="/meows/meow4.mp3" type="audio/mpeg">
+<audio id="meow5" source="" src="/meows/meow5.mp3" type="audio/mpeg">
+<audio id="meow6" source="" src="/meows/meow6.mp3" type="audio/mpeg">
+<audio id="meow7" source="" src="/meows/meow7.mp3" type="audio/mpeg">
+</audio></audio></audio></audio></audio></audio></audio></div>
+
+</body><html xmlns="https://www.w3.org/1999/xhtml"><head>
+<title>Geo Kitten</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="description" content="Can your choice in kittens reveal where you live?">
+<meta name="keywords" content="geo kitten, geo, kitten, accent">
+<meta property="og:title" content="Geo Kitten">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Can your choice in kittens reveal where you live?">
+<meta property="og:url" content="http://www.geokitten.com">
+<meta property="og:site_name" content="geokitten.com">
+<meta itemprop="name" content="Geo Kitten">
+<meta itemprop="description" content="Can your choice in kittens reveal where you live?">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet" type="text/css">
+<style type="text/css" media="all">
+body {
+	font-family: 'Pompiere', cursive;
+	background: url(/i/light_grey.png);
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+h1, h2, h3 {
+	font-size: 72px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+sup {
+  font-size: 12px;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -24px;
+}
+h2 {
+	font-size: 28px;
+	margin: 0 0 24px 0;
+}
+h3 {
+	font-size: 28px;
+	margin: 0 0 16px 0;
+}
+#country h3, #region h3, #city h3, #home h3, #true h3, #true-early h3, #false h3 {
+	padding: 116px 0 0 0;
+}
+h3.pick {
+	margin: 0 0 16px 0;
+}
+p {
+	font-size: 18px;
+}
+img {
+	height: 240px;
+	width: 240px;
+	border: 1px solid #ddd;
+	padding: 4px;
+	background: #fff;
+	border-radius: 4px;
+}
+img.left {
+	margin-right: 8px;
+}
+strong {
+	color: #f90092;
+	font-weight: normal;
+}
+input[type="submit"] {
+	border: 1px solid #f90092;
+	font-family: 'Pompiere', cursive;
+    width: 64px;
+    overflow: hidden;
+    font-size: 24px;
+	background: #f90092;
+	color: #fff;
+	border-radius: 4px;
+	padding: 6px 8px;
+	-webkit-appearance: none;
+}
+input[type="submit"].true, input[type="submit"].true-final , input[type="submit"].true-early, input[type="submit"].skip {
+	margin-right: 8px;
+}
+#container {
+	background: #fbfbfb;
+	height: 100%;
+	width: /*752px;*/ 512px;
+	margin: 0 auto;
+	padding: 24px 12px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	text-align: center;
+}
+#content {
+	height: 303px;
+}
+#country, #region, #city, #home, .choice, #false, #true, #true-early, #bail {
+	display: none;
+}
+#ad {
+	height: auto;
+	width: auto;
+	/* height: 90px;
+	width: 728px; */
+	margin: 36px auto 24px auto;
+}
+#social {
+	margin: 16px auto 16px auto;
+	width: 154px;
+}
+#fb, #twitter {
+	width: 85px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+#twitter {
+	width: 61px;
+	margin: 0;
+}
+.clear {
+	clear: both;
+}
+.after {
+	display: none;
+}
+.footer {
+	text-decoration: underline;
+}
+.mobile {
+	display: none;
+}
+/* GDPR Styles */
+#GDPR {
+	background: #ddd;
+	padding: 12px;
+	margin: -24px -12px 24px -12px;
+}
+#GDPR a {
+	color: #f90092;
+}
+#GDPR p {
+	color: #000;	
+	margin: 9px 0 0 0;
+	padding: 0;
+	text-align: left;
+}
+#GDPR br {
+	display: none;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+@media only screen and (max-width: 767px) {
+	/* Phones */
+	#content {
+		height: 195px;
+	}
+	h2, h3 {
+		font-size: 24px;
+		margin: 0 0 18px 0;
+	}
+	#country h3, #region h3, #city h3, #home h3, #true h3, #true-early h3, #false h3 {
+		padding-top: 24px;
+	}
+	.break {
+		width: 240px;
+		padding: 0 30px;
+	}
+	p {
+		padding: 0 0 24px 0;
+	}
+	#container {
+		width: 300px;
+		padding: 10px;
+		min-height: 750px;
+	}
+	img {
+		height: 135px;
+		width: 135px;
+		border: 1px solid #ddd;
+		padding: 4px;
+		background: #fff;
+		border-radius: 4px;
+	}
+	img.left {
+		margin-right: 7px;
+	}
+	#ad {
+		height: auto;
+		width: auto;
+		margin: 18px auto;
+	}
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+	#GDPR {
+		padding: 12px;
+	}
+	#GDPR br {
+		display: block;
+	}
+	#GDPR p {
+		margin: 12px 0 0 0;
+		text-align: left;
+	}
+	.float-left {
+		width: 70%;
+	}
+	.float-right {
+		width: 30%;
+	}
+	input[type=submit] {
+		width: 84px;
+		margin: 12px 0 0 0;
+	}
+}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="application/javascript">
+$(document).ready(function() {
+ 	
+ 	// Handle Continent Click
+	$('.continent').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+					
+		// Get Continent Data and Write to Page
+		var continent = 'North America';
+		$('.trackContinent').text(continent);
+				
+		// Get Country Data and Write to Page
+		var country = 'United States';
+		if ((country == 'United States') || (country == 'United Kingdom')) {
+			var article = 'the ';
+		} else {
+			var article = '';
+		}
+		$('.trackCountry').text(country);
+				
+		// Get Region Data and Write to Page
+		var region = 'Texas';
+		if (region == 'New York') {
+			region = 'New York State';
+		}
+		if (region == 'London, City of') {
+			region = 'London';	
+		}
+		if (region == 'Edinburgh, City of') {
+			region = 'Edinburgh';		
+		}	
+		$('.trackRegion').text(region);
+		
+		// Get City Data and Write to Page
+		var city = 'Austin';
+		if ((city == 'New York') || (city == 'Rego Park')) {
+			city = 'New York City';
+		}
+		$('.trackCity').text(city);
+				
+		// Prep H3s
+		$('#country h3').html('Hmm, your first choice suggests you live in <strong>' + continent + '</strong>. Is that correct?');
+		$('#region h3').html('We\'re thinking ' + article + '<strong>' + country + '</strong>. Is that right?');
+		$('#city h3').html('<strong>' + region + '?</strong> Is that right?');
+		$('#home h3').html('You live in <strong>' + city + '</strong>.');
+		
+		// Handle Continent Click
+		if ($('.trackContinent').text() == '') {
+			$('#continent').toggle();
+			$('.pick').toggle();
+			$('#bail').toggle();
+		} else {
+			$('#continent').toggle();
+			$('#country').toggle();
+			$('.pick').toggle();
+			$('#country .true').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Ok, now select between these cuties.');
+				$('#country .true').toggle();
+				$('#country .false').toggle();
+				$('#country h3').toggle();
+				$('#country .choice').toggle();
+			});
+		}
+	});
+	
+	// Handle Country Click
+	$('.country').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		// Skip Next Two Steps if We Don't Have Region or City
+		if (($('.trackRegion').text() == '') && ($('.trackCity').text() == '')) {
+			$('.pivot').removeClass('true');
+			$('.pivot').addClass('true-early');
+			
+			// End Early if Correct
+			$('.true-early').click(function(event) {
+				event.preventDefault();
+				$('#region').toggle();
+				$('#home').css('display','none');
+				$('#true-early').toggle();
+			});
+		}
+		
+		// Skip Region if it's Missing or the Same as City
+		if ((($('.trackRegion').text() == '') && ($('.trackCity').text() != '')) || ($('.trackRegion').text() == $('.trackCity').text())) {
+			$('#region .true').addClass('skip');
+			$('#region .true').removeClass('true');	
+		}
+		
+		// Continue if Region or City Exist
+		if ($('.trackCountry').text() == '') {
+			$('#country').toggle();
+			$('.pick').toggle();
+			$('#bail').toggle();
+		} else {		
+			$('#country').toggle();
+			$('#region').toggle();
+			$('.pick').toggle();
+			
+			// Skip Region
+			$('#region .skip').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Finally, which of these two do you prefer?');
+				$('#region .skip').toggle();
+				$('#region .false').toggle();
+				$('#region h3').toggle();
+				$('#city').toggle();
+				$('#city .choice').toggle();
+				$('#city h3').toggle();
+				$('#city h4').toggle();
+			});
+			
+			// Don't Skip Region
+			$('#region .true').click(function(event) {
+				event.preventDefault();
+				$('.pick').toggle();
+				$('.pick').text('Your favorite between these two?');
+				$('#region .true').toggle();
+				$('#region .false').toggle();
+				$('#region h3').toggle();
+				$('#region .choice').toggle();
+			});
+		}
+	});
+	
+	
+	// Handle Region Click
+	$('.region').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		$('#region').toggle();
+		$('#city').toggle();
+		$('.pick').toggle();
+		$('#city .true').click(function(event) {
+			event.preventDefault();
+			$('.pick').toggle();
+			$('.pick').text('Finally, which of these two do you prefer?');
+			$('#city .true').toggle();
+			$('#city .false').toggle();
+			$('#city h3').toggle();
+			$('#city .choice').toggle();
+		});
+	});
+	
+	// Handle City Click
+	$('.city').click(function(event) {
+		event.preventDefault();
+		var randomMeow = Math.floor(Math.random() * 7) + 1;
+		var randomAnnoy = '#meow' + randomMeow;
+    	$(randomAnnoy).get(0).play();
+    	
+		$('.pick').toggle();
+		$('#city').toggle();
+		$('#home').toggle();
+	});
+	
+	// Handle Early Wrong Answer
+	$('.false').click(function(event) {
+		event.preventDefault();
+		$('#country').css('display','none');
+		$('#region').css('display','none');
+		$('#city').css('display','none');
+		$('#false').toggle();
+	});
+	
+	// Handle Early Right Answer
+	$('.true-early').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#true-early').toggle();
+	});
+	
+	// Handle Final Right Answer
+	$('.true-final').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#true').toggle();
+	});
+	
+	// Handle Final Wrong Answer
+	$('.false-final').click(function(event) {
+		event.preventDefault();
+		$('#home').css('display','none');
+		$('#false').toggle();
+	});
+	
+	// Reveal IP Address
+	$('.before').click(function(event) {
+		event.preventDefault();
+		$('.before').toggle();
+		$('.after').toggle();
+	});
+});
+</script>
+<meta name="google-site-verification" content="Yz88A_VoxO9wI7vz94EScEv_bJJayFAwdoMmMRzmocs">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<style id="__wb_font_loader">
+    /* Optimist Extra Light */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLtIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLtIt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    /* Optimist Light */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Lt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Lt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_LtIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_LtIt.woff') format('woff');
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    /* Optimist Regular */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Rg.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Rg.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_It.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_It.woff') format('woff');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    /* Optimist SemiBold */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBd.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBd.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBdIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBdIt.woff') format('woff');
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    /* Optimist Bold */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Bd.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Bd.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_BdIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_BdIt.woff') format('woff');
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Circular Pro */
+    @font-face {
+      font-family: 'Circular-Pro-Book';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-book.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-book.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Blackitalic';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-blackitalic.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-blackitalic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Black';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-black.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-black.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Bookitalic';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-bookitalic.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-bookitalic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Wikibuy Icon Font */
+    @font-face {
+      font-family: 'wikibuy-iconfont';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/wikibuy-iconfont.woff') format('woff'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/wikibuy-iconfont.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style></head>
+<body>
+<div style="display: none;">
+	<div class="trackContinent"></div>
+	<div class="trackRegion"></div>
+	<div class="trackCountry"></div>
+	<div class="trackCity"></div>
+</div>
+<div id="container">
+		<h1><a href="/">Geo Kitten</a><sup>TM</sup></h1>
+	<h2 class="break">Can your choice in kittens reveal <strong>where you live?</strong></h2>
+	<div id="content">
+		<h3 class="pick">Start by clicking your favorite kitten.</h3>
+		<div id="continent">
+			<a href="" class="continent"><img src="/i/9.jpg" class="left"></a> <a href="" class="continent"><img src="/i/15.jpg"></a>
+		</div>
+		<div id="country">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="country"><img src="/i/6.jpg" class="left"></a><a href="" class="country"><img src="/i/11.jpg"></a></div>
+		</div>
+		<div id="region">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true pivot"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="region"><img src="/i/7.jpg" class="left"></a><a href="" class="region"><img src="/i/4.jpg"></a></div>
+		</div>
+		<div id="city">
+			<h3></h3>
+			<h4><input type="submit" value="Yes" class="true"><input type="submit" value="No" class="false"></h4>
+			<div class="choice"><a href="" class="city"><img src="/i/10.jpg" class="left"></a><a href="" class="city"><img src="/i/12.jpg"></a></div>
+		</div>
+		<div id="home">
+			<h3></h3>
+			<h4><input type="submit" value="Yes!" class="true-final"><input type="submit" value="No!" class="false-final"></h4>
+		</div>
+		<div id="false">
+			<h3>Rawr! Sry 2 Disapoint. 😿</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="true">
+			<h3>Meow! Meez win again! 😸</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="true-early">
+			<h3>Ure vry mysterious. <strong>Meez giv up.</strong> 😾</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+		<div id="bail">
+			<h3>Meez vry confusd. <strong>Sry.</strong> 😿</h3>
+			<!-- <div class="update"></div> -->
+		</div>
+	</div>
+	<div id="ad">
+		<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8073186300309643" crossorigin="anonymous"></script>
+	    <!-- Geokitten Responsive -->
+		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8073186300309643" data-ad-slot="1439441554" data-ad-format="auto" data-full-width-responsive="true"></ins>
+		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+	</div>
+	<p>© 2014-2024 <a href="http://www.boredbutton.com" class="footer">Bored Button</a> LLC<span class="desktop">&nbsp;&nbsp;|&nbsp;&nbsp;</span><br class="mobile"><a href="/terms" class="footer">Terms</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="privacy" class="footer">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="before footer" onclick="_gaq.push(['_trackEvent', 'Click', 'Learn']);">How Does This Work?</a><span class="after">By <a href="https://en.wikipedia.org/wiki/IP_address" onclick="_gaq.push(['_trackEvent', 'Click', 'IP']);"><u>IP address</u></a>. Learn more about <a href="https://www.aclu.org/technology-and-liberty/internet-privacy" onclick="_gaq.push(['_trackEvent', 'Click', 'Privacy']);"><u>internet privacy</u></a>.</span></p>
+</div>
+<div id="meows">
+<audio id="meow1" source="" src="/meows/meow1.mp3" type="audio/mpeg">
+<audio id="meow2" source="" src="/meows/meow2.mp3" type="audio/mpeg">
+<audio id="meow3" source="" src="/meows/meow3.mp3" type="audio/mpeg">
+<audio id="meow4" source="" src="/meows/meow4.mp3" type="audio/mpeg">
+<audio id="meow5" source="" src="/meows/meow5.mp3" type="audio/mpeg">
+<audio id="meow6" source="" src="/meows/meow6.mp3" type="audio/mpeg">
+<audio id="meow7" source="" src="/meows/meow7.mp3" type="audio/mpeg">
+</audio></audio></audio></audio></audio></audio></audio></div>
+
+</body></html>
